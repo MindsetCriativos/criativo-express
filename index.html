@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Criativo Express | Criativos que vendem em até 24h</title>
+<meta name="description" content="Criativo completo por R$35: copy, edição, legenda, trilha e efeitos. Entregue em até 24 horas.">
+<link rel="icon" href="assets/icone.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&family=Geist+Mono:wght@400;500;700;800&family=Outfit:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<!-- ============ MENU ============ -->
+<header class="menu" id="menu">
+  <a href="#topo" class="logo" aria-label="Criativo Express">
+    <svg class="logo-icone" viewBox="0 0 40 40" aria-hidden="true"><use href="#icone"/></svg>
+    <span class="logo-texto">criativo<b>.</b><i>express</i></span>
+  </a>
+  <nav class="menu-links">
+    <a href="#servico">Diferenciais</a>
+    <a href="#pacote">Pacote</a>
+    <a href="#passos">Como funciona</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#duvidas">Dúvidas</a>
+    <a href="#preco">Preço</a>
+  </nav>
+  <a href="#pedido" class="botao botao-p">FECHAR CRIATIVO</a>
+  <button class="menu-abre" aria-label="Abrir menu"><span></span><span></span></button>
+</header>
+
+<!-- ícone reutilizável -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="g-icone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A1EE7C"/><stop offset=".55" stop-color="#2EE389"/><stop offset="1" stop-color="#17BB69"/>
+    </linearGradient>
+    <linearGradient id="g-icone-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2EE389" stop-opacity=".85"/><stop offset="1" stop-color="#0B4B4D" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <symbol id="icone" viewBox="0 0 48 48">
+    <path d="M15.5 3h17.2c1.3 0 2.4.9 2.7 2.1l4.9 18.3c.3 1.1-.5 2.1-1.6 2.1H21.5c-1.3 0-2.4-.9-2.7-2.1L13.9 5.1c-.3-1.1.5-2.1 1.6-2.1z" fill="url(#g-icone)"/>
+    <path d="M9.5 12.5h15.2c1.3 0 2.4.9 2.7 2.1l4.4 16.5c.3 1.1-.5 2.1-1.6 2.1H15c-1.3 0-2.4-.9-2.7-2.1L7.9 14.6c-.3-1.1.5-2.1 1.6-2.1z" fill="#A1EE7C" opacity=".55"/>
+    <path d="M3.5 22h13.2c1.3 0 2.4.9 2.7 2.1l5 18.8c.3 1.1-.5 2.1-1.6 2.1H9.6c-1.3 0-2.4-.9-2.7-2.1L1.9 24.1C1.6 23 2.4 22 3.5 22z" fill="url(#g-icone-2)" opacity=".9"/>
+  </symbol>
+</svg>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo">
+  <div class="parede" aria-hidden="true" id="parede"></div>
+  <div class="hero-sombra"></div>
+  <div class="hero-conteudo">
+    <p class="kicker">EDITORES DE VERDADE · ENTREGA EXPRESS</p>
+    <h1>Especialista em<br><span class="digita" id="digita"></span><span class="cursor">|</span></h1>
+    <div class="hero-base">
+      <p class="hero-sub">Criativos feitos por editores de verdade.<br><span>Em até 24h, por R$35.</span></p>
+      <a href="#pedido" class="botao">QUERO MEU CRIATIVO <span class="seta">›</span></a>
+    </div>
+  </div>
+  <div class="selo-giro" aria-hidden="true">
+    <svg viewBox="0 0 120 120">
+      <defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+      <text><textPath href="#circ">ENTREGA EM ATÉ 24H • CRIATIVO EXPRESS • </textPath></text>
+    </svg>
+    <b>24h</b>
+  </div>
+  <div class="hero-selos">
+    <span><svg viewBox="0 0 40 40"><use href="#icone"/></svg> R$35 por criativo de até 1 min</span>
+    <span class="mono">3 RODADAS DE AJUSTE INCLUSAS</span>
+  </div>
+</section>
+
+<!-- ============ FAIXA DE NÚMEROS ============ -->
+<div class="faixa">
+  <div class="faixa-trilho" id="faixa"></div>
+</div>
+
+<!-- ============ ÁREA CLARA ============ -->
+<main class="claro">
+
+  <!-- SERVIÇO COMPLETO -->
+  <section class="secao" id="servico">
+    <p class="pilula revela">SERVIÇO COMPLETO</p>
+    <h2 class="revela">Tudo que o seu criativo precisa<br><em>pra vender</em> mais</h2>
+    <p class="sub revela">Do roteiro ao arquivo final, feito por uma equipe de editores.<br>Um pedido, um criativo pronto pra rodar.</p>
+
+    <div class="bento">
+      <!-- COPY -->
+      <article class="card revela">
+        <div class="card-visual vis-copy">
+          <div class="doc">
+            <div class="doc-topo"><span>roteiro_blackfriday.txt</span><span class="tag">COPY</span></div>
+            <div class="doc-linhas" id="docLinhas"></div>
+          </div>
+        </div>
+        <p class="card-kicker">COPY &amp; ROTEIRO</p>
+        <h3>Copy que prende em 3 segundos.</h3>
+        <p>Nossos redatores escrevem gancho, desenvolvimento e chamada pro seu público. <b>Você não precisa escrever nada</b>: a gente pesquisa, escreve e aprova com você.</p>
+      </article>
+
+      <!-- EDIÇÃO -->
+      <article class="card revela">
+        <div class="card-visual vis-barras">
+          <div class="barras-topo"><span class="mono">RETENÇÃO</span><b class="mono" data-conta="78">0</b><span class="mono">%</span></div>
+          <svg class="barras-linha" viewBox="0 0 300 120" preserveAspectRatio="none"><path d="M0 100 C40 96 60 70 90 74 S140 40 170 48 S230 18 300 10"/></svg>
+          <div class="barras">
+            <i style="--a:22%"></i><i style="--a:34%"></i><i style="--a:30%"></i><i style="--a:48%"></i><i style="--a:56%"></i><i style="--a:70%"></i><i style="--a:86%"></i>
+          </div>
+        </div>
+        <p class="card-kicker">EDIÇÃO &amp; MOTION</p>
+        <h3>Edição que não deixa pular.</h3>
+        <p>Nossos editores cortam no ritmo, com zoom, motion e B-roll. <b>Cada segundo pensado por uma pessoa</b> pra segurar quem está rolando o feed.</p>
+      </article>
+
+      <!-- LEGENDA / TERMINAL -->
+      <article class="card revela">
+        <div class="card-visual vis-term">
+          <div class="term">
+            <div class="term-topo"><i></i><i></i><i></i><span>~/ criativo.express · render.ts</span></div>
+            <div class="term-corpo" id="term"></div>
+          </div>
+          <span class="chip flutua" style="--x:70%;--y:12%">● Reels</span>
+          <span class="chip flutua" style="--x:6%;--y:48%;--d:1.2s">● TikTok</span>
+          <span class="chip flutua" style="--x:36%;--y:80%;--d:.6s">● Meta Ads</span>
+          <span class="chip flutua" style="--x:74%;--y:72%;--d:1.8s">● Shorts</span>
+        </div>
+        <p class="card-kicker">LEGENDA, TRILHA &amp; SFX</p>
+        <h3>Acabamento de estúdio.</h3>
+        <p>Legenda dinâmica palavra a palavra, trilha na batida e efeitos sonoros. <b>Pronto pro Reels, TikTok, Meta Ads e Shorts.</b></p>
+      </article>
+
+      <!-- ENTREGA -->
+      <article class="card revela">
+        <div class="card-visual vis-entrega">
+          <div class="entrega-num"><b class="mono">&lt;24h</b><span class="mono">ENTREGA EXPRESS</span></div>
+          <div class="mini-cel"><video muted loop playsinline preload="none" data-src="assets/port/01.mp4" poster="assets/port/01.jpg"></video></div>
+          <span class="orbita" style="--r:0deg">9:16</span>
+          <span class="orbita" style="--r:52deg">4:5</span>
+          <span class="orbita" style="--r:104deg">1:1</span>
+          <span class="orbita" style="--r:156deg">MP4</span>
+          <span class="orbita" style="--r:208deg">1080p</span>
+          <span class="orbita" style="--r:260deg">Copy</span>
+          <span class="orbita" style="--r:312deg">Trilha</span>
+        </div>
+        <p class="card-kicker">FORMATOS</p>
+        <h3>Do pedido ao arquivo em 24h.</h3>
+        <p>Criativo em 9:16, 4:5 e 1:1, em alta qualidade. Entrega no WhatsApp e no e-mail, <b>em até 24 horas</b>.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PACOTE COMPLETO / ABAS -->
+  <section class="secao" id="pacote">
+    <p class="pilula revela">PACOTE COMPLETO</p>
+    <h2 class="revela">Mais que edição.<br><em>Criativo pronto pra rodar.</em></h2>
+    <p class="sub revela"><span class="verde">Copy, gancho, legenda, trilha e entrega.</span> Tudo num pedido só.<br>Uma equipe de editores cuidando de cada detalhe, sem freela sumido.</p>
+
+    <div class="abas revela" id="abas">
+      <button class="ativa" data-aba="0"><span>🛒</span> Pedido</button>
+      <button data-aba="1"><span>✍️</span> Copy</button>
+      <button data-aba="2"><span>↻</span> Ajustes</button>
+      <button data-aba="3"><span>💬</span> Legenda</button>
+      <button data-aba="4"><span>⚡</span> Entrega</button>
+    </div>
+
+    <div class="painel revela" id="painel">
+      <!-- 0 PEDIDO -->
+      <div class="painel-item ativo">
+        <div class="painel-texto">
+          <p class="card-kicker">FECHE EM 3 MINUTOS</p>
+          <h3>Pediu, pagou, tá na fila.</h3>
+          <p>Você responde 3 perguntas rápidas: o nicho, o material que tem e a ideia da copy. Depois paga R$35 no Pix ou no cartão, e o editor começa.</p>
+          <ul class="checks">
+            <li>Sem cadastro e sem reunião</li>
+            <li>Pix ou cartão</li>
+            <li>Prazo de 24h conta do pagamento</li>
+          </ul>
+        </div>
+        <div class="janela">
+          <div class="janela-topo"><i></i><i></i><i></i><span>criativo.express · seu pedido</span></div>
+          <div class="pedido" id="pedidoMini">
+            <div class="mini-li"><span>1</span><p>Nicho<small>E-commerce</small></p><b>✓</b></div>
+            <div class="mini-li"><span>2</span><p>Material<small>Personagem de IA</small></p><b>✓</b></div>
+            <div class="mini-li"><span>3</span><p>Copy<small>Black Friday, 40% off até domingo</small></p><b>✓</b></div>
+            <div class="linha-total"><span>Total</span><b>R$ 35,00</b></div>
+            <div class="botao-cheio">Finalizar criativo · R$35</div>
+          </div>
+        </div>
+      </div>
+      <!-- 1 COPY -->
+      <div class="painel-item">
+        <div class="painel-texto">
+          <p class="card-kicker">ROTEIRO INCLUSO</p>
+          <h3>A gente escreve. Você aprova.</h3>
+          <p>Roteiro com estrutura de anúncio que vende: gancho, problema, solução e chamada. Escrito pro seu produto e pro seu público.</p>
+          <ul class="checks">
+            <li>Gancho nos 3 primeiros segundos</li>
+            <li>Linguagem do seu público</li>
+            <li>CTA claro no final</li>
+          </ul>
+        </div>
+        <div class="janela">
+          <div class="janela-topo"><i></i><i></i><i></i><span>roteiro · aprovado</span></div>
+          <div class="roteiro">
+            <p><span class="rot-tag">GANCHO</span> “Para de rolar: isso aqui muda seu Black Friday.”</p>
+            <p><span class="rot-tag cinza">PROBLEMA</span> Todo ano você deixa venda na mesa porque o anúncio não chama atenção.</p>
+            <p><span class="rot-tag cinza">SOLUÇÃO</span> Criativo pensado pra parar o dedo e levar pro clique.</p>
+            <p><span class="rot-tag">CTA</span> “Toca no botão e garante o seu agora.”</p>
+            <div class="aprovado">✓ Aprovado pelo cliente · 14:32</div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 AJUSTES -->
+      <div class="painel-item">
+        <div class="painel-texto">
+          <p class="card-kicker">3 RODADAS DE AJUSTE</p>
+          <h3>Não ficou do seu jeito? A gente ajusta.</h3>
+          <p>Depois que o criativo fica pronto, você tem 3 rodadas de ajuste inclusas no preço. Peça o que precisar: música, legenda, texto, ordem das cenas.</p>
+          <ul class="checks">
+            <li>3 rodadas inclusas nos R$35</li>
+            <li>Peça direto no WhatsApp</li>
+            <li>Ajuste feito por quem editou</li>
+          </ul>
+        </div>
+        <div class="janela">
+          <div class="janela-topo"><i></i><i></i><i></i><span>ajustes · seu criativo</span></div>
+          <div class="ganchos ajustes">
+            <div class="gancho vence"><span>1</span><p>“Troca a música por uma mais animada”</p><b>Feito ✓</b></div>
+            <div class="gancho vence"><span>2</span><p>“Deixa a legenda um pouco maior”</p><b>Feito ✓</b></div>
+            <div class="gancho"><span>3</span><p>Ainda disponível pra você usar</p><b>Livre</b></div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 LEGENDA -->
+      <div class="painel-item">
+        <div class="painel-texto">
+          <p class="card-kicker">LEGENDA DINÂMICA</p>
+          <h3>Legenda que acompanha a fala.</h3>
+          <p>Palavra a palavra, com destaque nas palavras-chave e as cores da sua marca. Funciona até com o som desligado.</p>
+          <ul class="checks">
+            <li>Sincronizada com a voz</li>
+            <li>Destaque nas cores da marca</li>
+            <li>Revisada, sem erro</li>
+          </ul>
+        </div>
+        <div class="janela janela-cel">
+          <div class="cel-legenda">
+            <video muted loop playsinline preload="none" data-src="assets/port/13.mp4" poster="assets/port/13.jpg"></video>
+            <div class="karaoke" id="karaoke"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 4 ENTREGA -->
+      <div class="painel-item">
+        <div class="painel-texto">
+          <p class="card-kicker">ENTREGA</p>
+          <h3>Chega pronto pra subir.</h3>
+          <p>Arquivos nomeados, em alta qualidade e em todos os formatos. Direto no seu WhatsApp e no seu e-mail.</p>
+          <ul class="checks">
+            <li>MP4 em 1080p</li>
+            <li>9:16, 4:5 e 1:1</li>
+            <li>Ajuste incluso se precisar</li>
+          </ul>
+        </div>
+        <div class="janela">
+          <div class="janela-topo"><i></i><i></i><i></i><span>entrega · pasta do cliente</span></div>
+          <div class="arquivos" id="arquivos">
+            <div class="arq"><span class="arq-ic">▶</span><p>criativo_9x16.mp4<small>1080×1920 · 32 MB</small></p><b>✓</b></div>
+            <div class="arq"><span class="arq-ic">▶</span><p>criativo_4x5.mp4<small>1080×1350 · 28 MB</small></p><b>✓</b></div>
+            <div class="arq"><span class="arq-ic">▶</span><p>criativo_1x1.mp4<small>1080×1080 · 25 MB</small></p><b>✓</b></div>
+            <div class="arq"><span class="arq-ic txt">T</span><p>copy_e_legenda.txt<small>roteiro final</small></p><b>✓</b></div>
+            <div class="entregue mono">ENTREGUE EM 17H 42MIN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSO A PASSO -->
+  <section class="secao" id="passos">
+    <p class="pilula revela">COMO FUNCIONA</p>
+    <h2 class="revela">Do clique ao criativo<br><em>em 3 passos.</em></h2>
+    <p class="sub revela">Você conta o que precisa, paga e recebe.<br>Sem cadastro, sem reunião, sem complicação.</p>
+
+    <div class="passos" id="passosGrade">
+      <article class="passo">
+        <div class="passo-visual">
+          <div class="hub">
+            <div class="hub-centro"><svg viewBox="0 0 40 40"><use href="#icone"/></svg></div>
+            <svg class="hub-linhas" viewBox="0 0 220 160"><path d="M60 80 C100 80 110 30 150 30"/><path d="M60 80 L150 80"/><path d="M60 80 C100 80 110 130 150 130"/></svg>
+            <div class="hub-item" style="--t:30px"><i></i>Nicho<span class="st" data-st="PRONTO ✓">PREENCHENDO…</span></div>
+            <div class="hub-item" style="--t:80px"><i></i>Material<span class="st" data-st="PRONTO ✓">PREENCHENDO…</span></div>
+            <div class="hub-item" style="--t:130px"><i></i>Copy<span class="st" data-st="PRONTO ✓">PREENCHENDO…</span></div>
+          </div>
+          <div class="hub-base mono">nicho · vídeos ou personagem de IA · copy</div>
+        </div>
+        <p class="card-kicker"><span class="num">01</span> CONTE O QUE PRECISA</p>
+        <h3>Responda 3 perguntas.</h3>
+        <p>Seu nicho, o material que você tem e a ideia da copy. Não tem vídeo gravado? A gente faz com personagem de IA.</p>
+      </article>
+
+      <article class="passo">
+        <div class="passo-visual">
+          <div class="janela janela-mini">
+            <div class="janela-topo"><i></i><i></i><i></i><span>checkout.criativo.express/c/8f2a</span></div>
+            <div class="aprovou">
+              <span class="aprovou-ic">✓</span>
+              <div><b>Pagamento aprovado</b><small>Pix · R$ 35,00</small></div>
+            </div>
+            <div class="liberado">
+              <p>🎬 <b>Seu criativo entrou na edição</b></p>
+              <p class="cinza">O prazo de 24h começa agora.</p>
+            </div>
+          </div>
+          <div class="fila"><b>+1 criativo</b><small class="mono">NA FILA AGORA</small><svg viewBox="0 0 60 20"><path d="M0 18 L12 14 L22 15 L34 8 L44 10 L60 2"/></svg></div>
+        </div>
+        <p class="card-kicker"><span class="num">02</span> PAGUE R$35</p>
+        <h3>Pague no Pix ou no cartão.</h3>
+        <p>Assim que o pagamento aprova, o seu pedido vai direto pra um editor da equipe.</p>
+      </article>
+
+      <article class="passo">
+        <div class="passo-visual">
+          <div class="cal">
+            <div class="cal-topo"><div><small class="mono">PRAZO</small><b>até 24h</b></div><span class="mono verde">após o pagamento</span></div>
+            <div class="cal-mes mono">NOV 2026</div>
+            <div class="cal-grade" id="calGrade"></div>
+            <div class="cal-aviso"><span>✓</span><div><b>Criativo entregue</b><small>Chegou no seu WhatsApp.</small></div></div>
+          </div>
+        </div>
+        <p class="card-kicker"><span class="num">03</span> RECEBA EM ATÉ 24H</p>
+        <h3>Receba e peça ajustes.</h3>
+        <p>O criativo chega no seu WhatsApp em até 24 horas. Se precisar mudar algo, você tem 3 rodadas de ajuste.</p>
+      </article>
+    </div>
+    <div class="icone-flutua revela"><svg viewBox="0 0 40 40"><use href="#icone"/></svg></div>
+  </section>
+
+  <!-- ESQUEÇA A EDIÇÃO -->
+  <section class="secao" id="editor">
+    <h2 class="revela">Esqueça a edição,<br><em class="ital">foque nas vendas.</em></h2>
+    <p class="sub sub-verde revela">Uma equipe de editores trabalhando no seu criativo.</p>
+
+    <div class="editor revela">
+      <div class="editor-topo"><i></i><i></i><i></i><span class="aba-ed ativa">criativo_bf.mp4</span><span class="aba-ed">roteiro.txt</span></div>
+      <div class="editor-corpo">
+        <div class="editor-lado"><span>◧</span><span>⌕</span><span>✂</span><span>♫</span><span>⚙</span></div>
+        <div class="editor-chat">
+          <p class="mono cinza">criativo.express · equipe de edição</p>
+          <div class="msg"><small class="mono">VOCÊ</small><p>Criativo de 30s pra minha loja de roupas, Black Friday.</p></div>
+          <div class="msg msg-bot"><small class="mono">SEU EDITOR</small>
+            <p>Pronto, em 4 passos:</p>
+            <ul class="feito" id="feito"><li>Copy escrita</li><li>Gancho forte</li><li>Legenda + trilha</li><li>Exportado 9:16</li></ul>
+            <p>Quer algum ajuste? Você tem 3 rodadas.</p>
+          </div>
+          <p class="mono verde pronto">PRONTO PRA SUBIR ✓</p>
+        </div>
+        <div class="editor-palco">
+          <div class="palco-video"><video muted loop playsinline preload="none" data-src="assets/port/02.mp4" poster="assets/port/02.jpg"></video><span class="rec mono">● 00:07</span></div>
+          <div class="timeline">
+            <div class="cabeca"></div>
+            <div class="trilha t-v"><span style="--w:22%">gancho</span><span style="--w:30%">produto</span><span style="--w:26%">prova</span><span style="--w:18%">cta</span></div>
+            <div class="trilha t-l"><span style="--w:12%"></span><span style="--w:9%"></span><span style="--w:15%"></span><span style="--w:10%"></span><span style="--w:13%"></span><span style="--w:11%"></span><span style="--w:14%"></span></div>
+            <div class="trilha t-a"><svg viewBox="0 0 400 24" preserveAspectRatio="none" id="onda"></svg></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ferramentas revela">
+      <span><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#0A0A0A"/><rect x="8" y="6" width="2.6" height="12" rx="1" fill="#fff"/><rect x="13.4" y="6" width="2.6" height="12" rx="1" fill="#fff"/></svg>ElevenLabs</span>
+      <span><svg viewBox="0 0 24 24"><defs><linearGradient id="t-hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00C2FF"/><stop offset="1" stop-color="#7B4DFF"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#t-hg)"/><path d="M8 7v10M16 7v10M8 12h8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>HeyGen</span>
+      <span><svg viewBox="0 0 24 24"><defs><linearGradient id="t-df" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6FB5"/><stop offset="1" stop-color="#8A5CFF"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#t-df)"/><circle cx="12" cy="12" r="5" fill="none" stroke="#fff" stroke-width="2.2"/><circle cx="12" cy="12" r="1.6" fill="#fff"/></svg>Dreamface</span>
+      <span><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#111827"/><path d="M7 7l5 10 5-10" fill="none" stroke="#3DF5C4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Vmake</span>
+    </div>
+    <p class="sub revela"><b>ElevenLabs, HeyGen, Dreamface e Vmake</b>: as ferramentas de IA mais caras já estão no nosso estúdio.<br>Você não paga nenhuma assinatura, e um editor de verdade usa cada uma pra deixar seu criativo melhor.</p>
+    <div class="economia revela"><span class="mono">ECONOMIA DE FERRAMENTA</span><b>4 assinaturas</b><small>que você deixa de pagar</small></div>
+    <div class="acoes revela">
+      <a href="#portfolio" class="botao">VER PORTFÓLIO <span class="seta">›</span></a>
+      <a href="#" class="link-sub">💬 Falar no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO / ANEL -->
+  <section class="secao" id="portfolio">
+    <p class="pilula revela">PORTFÓLIO</p>
+    <h2 class="revela">Criativo pra todo nicho.<br><em>Do varejo ao app.</em></h2>
+    <p class="sub revela"><span class="verde">Moda, apps, clínicas, beleza e e-commerce.</span> Cada criativo<br>no tom da marca e no formato que <span class="verde">o seu cliente já assiste</span>.</p>
+
+    <div class="anel-palco">
+      <div class="anel-luz"></div>
+      <div class="anel" id="anel"></div>
+    </div>
+    <div class="nichos" id="nichos">
+      <button data-alvo="0"><small class="mono">VAREJO · MODA</small>Lojas &amp; roupas<span>↻</span></button>
+      <button data-alvo="3"><small class="mono">APPS · TECH</small>Apps &amp; SaaS<span>↻</span></button>
+      <button data-alvo="8"><small class="mono">SAÚDE</small>Clínicas<span>↻</span></button>
+      <button data-alvo="10"><small class="mono">BELEZA</small>Cosméticos<span>↻</span></button>
+      <button data-alvo="1"><small class="mono">E-COMMERCE</small>Produtos<span>↻</span></button>
+    </div>
+    <p class="nicho-dica">Clique no nicho pra ver um criativo dele.</p>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section class="secao" id="duvidas">
+    <p class="pilula revela">DÚVIDAS</p>
+    <h2 class="revela">Ficou alguma dúvida?<br><em>A gente responde.</em></h2>
+    <div class="faq revela">
+      <details open><summary>O que vem nos R$35?</summary><p>Um criativo completo de até 1 minuto: copy e roteiro, edição com motion, legenda dinâmica, trilha e efeitos sonoros, nos formatos 9:16, 4:5 e 1:1. Mais 3 rodadas de ajuste depois de pronto.</p></details>
+      <details><summary>Como faço o pedido?</summary><p>Clique em <b>Quero meu criativo</b> e responda 3 perguntas: o nicho, o material que você tem e a ideia da copy. No fim, o pedido vai pronto pro nosso WhatsApp, onde você paga os R$35 no Pix ou no cartão.</p></details>
+      <details><summary>Qual a duração do criativo?</summary><p>Até 1 minuto. Dá pra Reels, TikTok, Shorts e anúncio no Meta Ads.</p></details>
+      <details><summary>Preciso aparecer no vídeo ou ter algo gravado?</summary><p>Não. Se você não tiver vídeo gravado, a gente faz o criativo com um personagem de IA. É só descrever como quer que ele seja.</p></details>
+      <details><summary>Preciso escrever a copy?</summary><p>Não. Se tiver uma ideia, conte no pedido. Se deixar em branco, o nosso redator escreve a copy do zero.</p></details>
+      <details><summary>Quando recebo?</summary><p>Em até 24 horas depois que o pagamento é aprovado. O criativo chega no seu WhatsApp.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 3 rodadas de ajuste inclusas. Peça o que precisar mudar (música, legenda, texto, cenas) e o editor ajusta.</p></details>
+      <details><summary>Preciso de mais de um criativo. Como faço?</summary><p>Faça um pedido pra cada criativo. Cada um custa R$35 e tem o próprio prazo de 24 horas.</p></details>
+    </div>
+    <a href="#pedido" class="botao revela faq-cta">QUERO MEU CRIATIVO <span class="seta">›</span></a>
+  </section>
+</main>
+
+<!-- ============ ÁREA ESCURA ============ -->
+<section class="escuro" id="comunidade">
+  <canvas id="estrelas"></canvas>
+  <div class="esc-conteudo">
+    <div class="icone-3d"><svg viewBox="0 0 40 40"><use href="#icone"/></svg></div>
+    <h2 class="revela">Não é sobre vídeo.<br><em class="ital">É sobre venda!</em></h2>
+    <p class="sub revela">Todo criativo nasce com um objetivo: parar o dedo, prender a atenção<br>e levar pro clique. <span class="verde">Bonito é bom. Vender é melhor.</span></p>
+  </div>
+  <div class="esteira" id="esteira"></div>
+  <div class="esc-conteudo">
+    <a href="#" class="botao revela">VISITE NOSSO INSTAGRAM <span class="seta">›</span></a>
+    <p class="pilula pilula-esc revela">🎬 NO FEED</p>
+    <h2 class="revela h2-verde">Veja um criativo<br><em class="ital">rodando no feed.</em></h2>
+  </div>
+  <div class="horizonte">
+    <div class="arco"></div>
+    <div class="cel" id="cel">
+      <div class="cel-ilha"></div>
+      <video muted loop playsinline preload="none" id="celVideo"></video>
+      <div class="cel-ui">
+        <div class="cel-acoes"><span>♥<small>12,4k</small></span><span>💬<small>318</small></span><span>➤<small>1,2k</small></span></div>
+        <div class="cel-info"><b>@suamarca</b><p id="celLegenda">Criativo · Moda</p><span class="mono">Patrocinado · Saiba mais ›</span></div>
+      </div>
+      <div class="cel-pontos" id="celPontos"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREÇO / FECHAMENTO ============ -->
+<section class="fecha" id="preco">
+  <h2 class="mono revela">Feche seu criativo<br>agora por R$35!</h2>
+  <div class="preco revela">
+    <div class="preco-topo">
+      <p class="card-kicker">CRIATIVO EXPRESS</p>
+      <div class="valor"><small>R$</small><b>35</b><span>/criativo</span></div>
+      <p class="cinza">Pagamento único. Sem mensalidade, sem assinatura de ferramenta.</p>
+    </div>
+    <ul class="checks checks-esc">
+      <li>Criativo de até 1 minuto</li>
+      <li>Feito por editores de verdade</li>
+      <li>Copy e roteiro escritos pra você</li>
+      <li>Edição com motion e B-roll</li>
+      <li>Legenda dinâmica revisada</li>
+      <li>Trilha na batida + efeitos sonoros</li>
+      <li>Formatos 9:16, 4:5 e 1:1</li>
+      <li>Entrega em até 24 horas no WhatsApp</li>
+      <li>3 rodadas de ajuste inclusas</li>
+      <li>Sem pagar ElevenLabs, HeyGen, Dreamface e Vmake</li>
+    </ul>
+    <div class="preco-acao">
+      <span class="mono clique">É SÓ<br>CLICAR AQUI</span><span class="seta-l">→</span>
+      <a href="#pedido" class="botao">QUERO MEU CRIATIVO <span class="seta">›</span></a>
+    </div>
+  </div>
+  <div class="marca-gigante" aria-hidden="true">criativo<b>.</b><i>express</i></div>
+</section>
+
+<footer class="rodape">
+  <div class="rodape-esq">
+    <a href="#topo" class="logo"><svg class="logo-icone" viewBox="0 0 40 40"><use href="#icone"/></svg><span class="logo-texto">criativo<b>.</b><i>express</i></span></a>
+    <p>Copyright © 2026 Criativo Express<br>CNPJ: 00.000.000/0001-00</p>
+  </div>
+  <div class="rodape-col"><b class="mono">MENU</b><a href="#servico">Diferenciais</a><a href="#pacote">Pacote</a><a href="#passos">Como funciona</a><a href="#portfolio">Portfólio</a></div>
+  <div class="rodape-col"><b class="mono">LEGAL</b><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div>
+  <div class="rodape-col"><b class="mono">SOCIAL MEDIA</b><a href="#">Instagram</a><a href="#">WhatsApp</a></div>
+</footer>
+
+<!-- ============ PASSO A PASSO DO PEDIDO ============ -->
+<div class="pd" id="pedido" hidden role="dialog" aria-modal="true" aria-labelledby="pdTitulo0">
+  <div class="pd-fundo" data-fecha></div>
+  <div class="pd-caixa">
+    <header class="pd-topo">
+      <span class="logo"><svg class="logo-icone" viewBox="0 0 48 48" aria-hidden="true"><use href="#icone"/></svg><span class="logo-texto">criativo<b>.</b><i>express</i></span></span>
+      <button type="button" class="pd-fechar" data-fecha aria-label="Fechar">✕</button>
+    </header>
+
+    <ol class="pd-trilha" id="pdTrilha">
+      <li class="on"><span>1</span>Nicho</li>
+      <li><span>2</span>Material</li>
+      <li><span>3</span>Copy</li>
+      <li><span>4</span>Pagamento</li>
+    </ol>
+    <div class="pd-barra"><i id="pdBarra"></i></div>
+
+    <form class="pd-corpo" id="pdForm" novalidate>
+      <!-- 1 NICHO -->
+      <section class="pd-etapa ativa" data-etapa="0">
+        <p class="pd-kicker">PASSO 1 DE 4</p>
+        <h3 id="pdTitulo0">Qual é o nicho do seu criativo?</h3>
+        <p class="pd-sub">Escolha o que mais combina com o que você vende. Isso guia o tom do editor.</p>
+        <div class="pd-opcoes">
+          <label class="pd-op"><input type="radio" name="nicho" id="nicho-ecom" value="E-commerce"><b>E-commerce</b><small>Loja online e produto físico</small></label>
+          <label class="pd-op"><input type="radio" name="nicho" id="nicho-info" value="Infoproduto"><b>Infoproduto</b><small>Curso, mentoria, e-book</small></label>
+          <label class="pd-op"><input type="radio" name="nicho" id="nicho-drop" value="Dropshipping"><b>Dropshipping</b><small>Produto validado, venda rápida</small></label>
+          <label class="pd-op"><input type="radio" name="nicho" id="nicho-nutra" value="Nutracêutico"><b>Nutracêutico</b><small>Suplemento, saúde e beleza</small></label>
+          <label class="pd-op"><input type="radio" name="nicho" id="nicho-saas" value="SaaS"><b>SaaS</b><small>App, software, assinatura</small></label>
+          <label class="pd-op"><input type="radio" name="nicho" id="nicho-outro" value="Outro"><b>Outro</b><small>Escreva o seu nicho</small></label>
+        </div>
+        <div class="pd-campo" id="pdOutroCaixa" hidden>
+          <label for="pdOutro">Qual é o seu nicho?</label>
+          <input type="text" id="pdOutro" placeholder="Ex.: clínica de estética, imobiliária, pet shop" autocomplete="off">
+        </div>
+      </section>
+
+      <!-- 2 MATERIAL -->
+      <section class="pd-etapa" data-etapa="1">
+        <p class="pd-kicker">PASSO 2 DE 4</p>
+        <h3>Você tem vídeos ou fotos gravados?</h3>
+        <p class="pd-sub">Pode ser gravação do celular, sem edição. É com isso que o editor monta o seu criativo. Não tem? Sem problema, a gente faz com personagem de IA.</p>
+        <div class="pd-opcoes pd-opcoes-2">
+          <label class="pd-op"><input type="radio" name="material" id="mat-bruto" value="bruto"><b>Tenho vídeos ou fotos</b><small>Vou enviar o que gravei (material bruto)</small></label>
+          <label class="pd-op"><input type="radio" name="material" id="mat-ia" value="ia"><b>Não tenho nada gravado</b><small>Quero com personagem de IA</small></label>
+        </div>
+        <div id="pdBrutoCaixa" hidden>
+          <div class="pd-info">
+            <span class="pd-info-ic">↑</span>
+            <div><b>Você manda os vídeos e fotos no WhatsApp</b><small>No final, o pedido abre direto na nossa conversa. É só anexar seus arquivos lá, sem limite de tamanho do site.</small></div>
+          </div>
+          <div class="pd-campo">
+            <label for="pdLinkBruto">Já tem tudo numa pasta? Cole o link <em>(opcional)</em></label>
+            <input type="url" id="pdLinkBruto" placeholder="Google Drive, WeTransfer, Dropbox…" autocomplete="off">
+          </div>
+        </div>
+        <div class="pd-campo" id="pdIaCaixa" hidden>
+          <label for="pdPersonagem">Como você quer o seu personagem?</label>
+          <textarea id="pdPersonagem" rows="4" placeholder="Ex.: mulher de 30 anos, cabelo cacheado, blusa verde, falando na cozinha de casa, tom animado e próximo."></textarea>
+          <small class="pd-ajuda">Fale idade, aparência, roupa, lugar e jeito de falar. O editor cria o personagem a partir da sua descrição.</small>
+        </div>
+      </section>
+
+      <!-- 3 COPY -->
+      <section class="pd-etapa" data-etapa="2">
+        <p class="pd-kicker">PASSO 3 DE 4</p>
+        <h3>Como você quer a copy?</h3>
+        <p class="pd-sub">Conte a ideia e o que não pode faltar. Não sabe o que escrever? Deixe em branco que o nosso redator cria do zero.</p>
+        <div class="pd-campo">
+          <label for="pdCopy">Ideia e observações da copy <em>(opcional)</em></label>
+          <textarea id="pdCopy" rows="5" placeholder="Ex.: Black Friday da minha loja, 40% off só até domingo. Quero um gancho forte nos 3 primeiros segundos e chamada pro link da bio."></textarea>
+        </div>
+        <div class="pd-dicas">
+          <span>O que você vende</span><span>Oferta ou promoção</span><span>Pra quem é</span><span>Chamada final</span>
+        </div>
+        <div class="pd-campo">
+          <label for="pdLink">Link do produto ou da página <em>(opcional)</em></label>
+          <input type="url" id="pdLink" placeholder="https://" autocomplete="off">
+        </div>
+      </section>
+
+      <!-- 4 PAGAMENTO -->
+      <section class="pd-etapa" data-etapa="3">
+        <p class="pd-kicker">PASSO 4 DE 4</p>
+        <h3>Pra onde mandamos o criativo?</h3>
+        <p class="pd-sub">Deixe seu contato e confira o pedido. Ele vai pronto pro nosso WhatsApp, onde você paga os R$35 e o editor começa.</p>
+        <div class="pd-contato">
+          <div class="pd-campo"><label for="pdNome">Seu nome</label><input type="text" id="pdNome" autocomplete="name" placeholder="Como podemos te chamar"></div>
+          <div class="pd-campo"><label for="pdZap">WhatsApp</label><input type="tel" id="pdZap" autocomplete="tel" inputmode="tel" placeholder="(11) 91234-5678"></div>
+          <div class="pd-campo pd-campo-largo"><label for="pdEmail">E-mail <em>(opcional)</em></label><input type="email" id="pdEmail" autocomplete="email" placeholder="voce@email.com"></div>
+        </div>
+        <dl class="pd-resumo" id="pdResumo"></dl>
+        <div class="pd-preco">
+          <div><p class="pd-kicker">CRIATIVO EXPRESS</p><small>Até 1 min · entrega em até 24h · 3 rodadas de ajuste</small></div>
+          <b>R$ 35,00</b>
+        </div>
+        <div class="pd-opcoes pd-opcoes-2 pd-pag">
+          <label class="pd-op"><input type="radio" name="pagamento" id="pag-pix" value="Pix" checked><b>Vou pagar no Pix</b><small>Aprovação na hora</small></label>
+          <label class="pd-op"><input type="radio" name="pagamento" id="pag-cartao" value="Cartão"><b>Vou pagar no cartão</b><small>Crédito ou débito</small></label>
+        </div>
+      </section>
+      <!-- 5 ENVIADO -->
+      <section class="pd-etapa pd-fim" data-etapa="4">
+        <div class="pd-fim-ic">✓</div>
+        <h3>Seu pedido está pronto!</h3>
+        <p class="pd-sub">Agora é só enviar no WhatsApp. Lá você paga os R$35 e o editor começa. O prazo de 24h conta a partir do pagamento.</p>
+        <a class="botao pd-zap" id="pdZapLink" href="#" target="_blank" rel="noopener">ENVIAR PEDIDO NO WHATSAPP <span class="seta">›</span></a>
+        <p class="pd-lembrete" id="pdLembrete" hidden><b>Não esquece:</b> anexe seus vídeos e fotos na conversa, logo depois do pedido.</p>
+        <button type="button" class="pd-voltar pd-rever" id="pdRever">Revisar o pedido</button>
+      </section>
+    </form>
+
+    <footer class="pd-rodape">
+      <p class="pd-ajustes"><span class="pd-ajustes-ic">↻</span><span><b>3 rodadas de ajuste inclusas.</b> Depois do criativo pronto, você pede até 3 ajustes no que precisar.</span></p>
+      <p class="pd-aviso" id="pdAviso" role="status"></p>
+      <div class="pd-acoes">
+        <button type="button" class="pd-voltar" id="pdVoltar">Voltar</button>
+        <button type="button" class="botao pd-seguir" id="pdSeguir">CONTINUAR <span class="seta">›</span></button>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
